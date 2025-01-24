@@ -1,0 +1,66 @@
+body {
+  background: lightblue;
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+}
+.HP {
+  display: grid;
+}
+
+.left {
+  height: 100%;
+  max-width: 30%;
+}
+
+.right {
+  max-width: 50%;
+  flex-direction: column;
+  margin-left: 11em;
+}
+
+.ITP {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 16px;
+  height: auto;
+  width: auto;
+  margin-top: 3em;
+}
+
+.ITP img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media all and (max-width: 768px){
+  .left {
+    display: none;
+    flex-shrink: initial;
+  }
+  .container{
+    margin-left: -7rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .container {
+    display: flex;
+  }
+.right {
+  display: flex;
+}
+}
+@media all and (max-width: 425px) {
+
+}
